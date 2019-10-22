@@ -260,7 +260,7 @@
 }
 
 .about .about-content-wrapper {
-  background: rgba(0, 115, 188, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   padding: 30px;
   border-radius: 10% 0;
 }
@@ -295,7 +295,7 @@
 }
 
 .contact-banner {
-  background: #0073bc;
+  background: #F15A2C;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,14 +400,14 @@
 }
 
 .contact .contact-content-wrapper {
-  background: #0073bc;
-  padding: 5vh;
+  background: #F15A2C;
+  padding: 7vh 5vh;
 }
 
 .contact .contact-content-wrapper .heading::after {
   left: 0;
   bottom: 0;
-  border-bottom: 5px solid #F15A2C;
+  border-bottom: 5px solid #f2f2f2;
   width: 40%;
 }
 

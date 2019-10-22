@@ -1,15 +1,15 @@
 .contact {
   padding: 5vh 0;
   .contact-content-wrapper {
-    background: $primary-color;
-    padding: 5vh;
+    background: $highlighter;
+    padding: 7vh 5vh;
     .heading {
       // background: coral;
 
       &::after {
         left: 0;
         bottom: 0;
-        border-bottom: 5px solid $highlighter;
+        border-bottom: 5px solid $text-rev;
         width: 40%;
       }
       h1 {
