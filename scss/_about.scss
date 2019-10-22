@@ -1,0 +1,40 @@
+.about {
+  padding: 10vh 5vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/about-bg.jpg") no-repeat center;
+  background-size: cover;
+  color: aliceblue;
+
+  .about-content-wrapper {
+
+    background: rgba($primary-color, 0.7);
+    padding: 30px;
+    border-radius: 10% 0;
+
+    .heading {
+      // background: coral;
+      padding: 0.7rem;
+      position: relative;
+      margin-bottom: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-bottom: 4px solid #fff;
+        width: 40%;
+      }
+      
+    }
+
+    .content {
+        margin-top: 50px;
+      p {
+        margin: 20px 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
