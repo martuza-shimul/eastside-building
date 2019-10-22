@@ -592,17 +592,17 @@
             animation: pulse 1s;
   }
   .main-header .menu-btn:checked ~ .menu-icon .menu-icon_line {
-    background: #ffffff;
+    background: #f2f2f2;
     -webkit-animation: openMid 0.8s forwards;
             animation: openMid 0.8s forwards;
   }
   .main-header .menu-btn:checked ~ .menu-icon .menu-icon_line::before {
-    background: #ffffff;
+    background: #f2f2f2;
     -webkit-animation: openTop 0.8s forwards;
             animation: openTop 0.8s forwards;
   }
   .main-header .menu-btn:checked ~ .menu-icon .menu-icon_line::after {
-    background: #ffffff;
+    background: #f2f2f2;
     -webkit-animation: openBtm 0.8s forwards;
             animation: openBtm 0.8s forwards;
   }

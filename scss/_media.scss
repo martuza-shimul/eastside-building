@@ -84,16 +84,16 @@
       animation: pulse 1s;
 
       .menu-icon_line {
-        background: #ffffff;
+        background: $text-rev;
         animation: openMid 0.8s forwards;
 
         &::before {
-          background: #ffffff;
+          background: $text-rev;
           animation: openTop 0.8s forwards;
         }
 
         &::after {
-          background: #ffffff;
+          background: $text-rev;
           animation: openBtm 0.8s forwards;
         }
       }
