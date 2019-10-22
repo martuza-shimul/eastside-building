@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
     url("../img/hero-image.jpg") no-repeat center;
   background-size: cover;
   display: flex;
@@ -30,21 +30,21 @@
     }
     &::before {
       left: 0;
-      border-bottom: 6px solid #fff;
+      border-bottom: 6px solid $highlighter;
     }
     &::after {
       right: 0;
-      border-top: 6px solid #fff;
+      border-top: 6px solid $highlighter;
     }
   }
-  button{
+  button {
     border-radius: 15px 0;
-    background: $primary-color;
+    background: $highlighter;
+    font-weight: 700;
 
-    &:hover{
-      background: aliceblue;
-      color: $primary-color;
-      font-weight: 700;
+    &:hover {
+      background: $primary-color;
+      color: $sticky-header;
     }
   }
 }

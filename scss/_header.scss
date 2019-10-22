@@ -6,7 +6,7 @@
   height: 85px;
   width: 100vw;
   padding: 0 10vh;
-  color: #fff;
+  color:  $primary-color;
   z-index: 99;
   transition: 0.4s ease-out;
 
@@ -113,8 +113,8 @@
   &.scrolled {
     height: 65px;
     // background: rgba(0, 115, 188, 0.9);
-    background: rgba($primary-color, 0.8);
-    color: #fff;
+    background: rgba($sticky-header, 0.9);
+    // color: $primary-color;
     .logo {
       a:first-child {
         display: none;
