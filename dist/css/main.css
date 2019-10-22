@@ -11,7 +11,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  border-bottom: 5px solid #000;
+  border-bottom: 5px solid #F15A2C;
   width: 100%;
 }
 
@@ -20,6 +20,7 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
+  color: #0073bc;
 }
 
 .main-header {
@@ -160,7 +161,7 @@
 
 .main-header.scrolled {
   height: 65px;
-  background: rgba(242, 242, 242, 0.9);
+  background: rgba(240, 248, 255, 0.9);
 }
 
 .main-header.scrolled .logo a:first-child {
@@ -234,7 +235,7 @@
 
 .hero button:hover {
   background: #0073bc;
-  color: #f2f2f2;
+  color: aliceblue;
 }
 
 .services .heading::after {
@@ -244,7 +245,7 @@
 }
 
 .services .new-item p {
-  background: #0073bc;
+  background: #F15A2C;
   padding: 20px 10px;
   font-size: 1.35rem;
   font-weight: 500;
@@ -275,8 +276,12 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  border-bottom: 4px solid #fff;
+  border-bottom: 5px solid #F15A2C;
   width: 40%;
+}
+
+.about .about-content-wrapper .heading h1 {
+  color: #f2f2f2;
 }
 
 .about .about-content-wrapper .content {
@@ -346,7 +351,7 @@
 }
 
 .pricing .price-content-wrapper .content ul li i {
-  color: #0073bc;
+  color: #F15A2C;
 }
 
 .pricing .price-content-wrapper .content ul li .rate {
@@ -387,7 +392,7 @@
 
 .area-cover .tabs .indicator {
   height: 3px;
-  background-color: #0073bc;
+  background-color: #F15A2C;
 }
 
 .contact {
@@ -402,7 +407,7 @@
 .contact .contact-content-wrapper .heading::after {
   left: 0;
   bottom: 0;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid #F15A2C;
   width: 40%;
 }
 
@@ -433,11 +438,15 @@
 }
 
 .contact .form-wrapper button {
+  background: #F15A2C;
+}
+
+.contact .form-wrapper button:hover {
   background: #0073bc;
 }
 
 .footer {
-  background: #0073bc;
+  background: #F15A2C;
   padding: 1vh;
   color: #fff;
 }

@@ -22,8 +22,11 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        border-bottom: 4px solid #fff;
+        border-bottom: 5px solid $highlighter;
         width: 40%;
+      }
+      h1{
+        color: $text-rev;
       }
       
     }

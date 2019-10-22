@@ -1,7 +1,8 @@
 $primary-color: rgb(0,115,188);
-$sticky-header: #f2f2f2;
+$sticky-header: aliceblue;
 $highlighter: #F15A2C;
 $text-color: #000;
+$text-rev: #f2f2f2;
 
 .heading {
     // background: coral;
@@ -16,7 +17,7 @@ $text-color: #000;
       position: absolute;
       left: 0;
       bottom: 0;
-      border-bottom: 5px solid #000;
+      border-bottom: 5px solid $highlighter;
       width: 100%;
     }
     h1 {
@@ -24,5 +25,6 @@ $text-color: #000;
         font-weight: 700;
         letter-spacing: 3px;
         text-transform: uppercase;
+        color: $primary-color;
       }
   }
