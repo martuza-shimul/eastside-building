@@ -15,9 +15,12 @@
     border-radius: 10px 0;
     padding: 7px;
     font-weight: 900;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
     a:last-child {
-      visibility: hidden;
+      display: none;;
     }
   }
 
@@ -69,7 +72,7 @@
     &_line {
       display: block;
       position: relative;
-      background: #fff;
+      background: $text-color;
       height: 2px;
       width: 20px;
       border-radius: 4px;
@@ -82,7 +85,7 @@
         height: 100%;
         width: 100%;
         border-radius: 4px;
-        background: #fff;
+        background: $text-color;
         transition: background 0.8s ease;
       }
       &::before {
@@ -120,14 +123,14 @@
         display: none;
       }
       a:last-child {
-        visibility: visible;
+        display: initial;
       }
     }
     .menu-icon {
       &_line,
       &_line::before,
       &_line::after {
-        background: #fff;
+        background: $text-color;
       }
     }
   }

@@ -2,6 +2,8 @@
   background: $highlighter;
   padding: 1vh;
   color: #fff;
+  box-sizing: border-box;
+  max-width: 100vw;
   // display: grid;
 
   .row {
