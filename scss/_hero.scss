@@ -1,7 +1,7 @@
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url("../img/hero-image.jpg") no-repeat center;
+  background: linear-gradient(rgba($text-rev, 0.1), rgba($primary-color, 0.5)),
+    url("../img/hero3.jpg") no-repeat top center;
   background-size: cover;
   display: flex;
   justify-content: center;

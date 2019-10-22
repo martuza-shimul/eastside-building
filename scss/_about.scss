@@ -1,7 +1,7 @@
 .about {
   padding: 10vh 5vh;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/about-bg.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba($primary-color, 0.5)),
+    url("../img/hero1.jpg") no-repeat center;
   background-size: cover;
   color: aliceblue;
 

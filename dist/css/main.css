@@ -178,8 +178,8 @@
 
 .hero {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5))), url("../img/hero-image.jpg") no-repeat center;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../img/hero-image.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 242, 242, 0.1)), to(rgba(0, 115, 188, 0.5))), url("../img/hero3.jpg") no-repeat top center;
+  background: linear-gradient(rgba(242, 242, 242, 0.1), rgba(0, 115, 188, 0.5)), url("../img/hero3.jpg") no-repeat top center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,8 +253,8 @@
 
 .about {
   padding: 10vh 5vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/about-bg.jpg") no-repeat center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/about-bg.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 115, 188, 0.5))), url("../img/hero1.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 115, 188, 0.5)), url("../img/hero1.jpg") no-repeat center;
   background-size: cover;
   color: aliceblue;
 }
@@ -346,7 +346,7 @@
 }
 
 .pricing .price-content-wrapper .content ul li p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
