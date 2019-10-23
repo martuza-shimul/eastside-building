@@ -239,10 +239,21 @@
 
     <div class="hero">
       <h1>Get A Free Quote</h1>
-      <button class="waves-effect waves-light btn-large"><i class="material-icons left">call_to_action</i>Get Started</button>
+      <button class="waves-effect waves-light btn-large modal-trigger" data-target="modal1"><i class="material-icons left">call_to_action</i>Get Started</button>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vel eum nostrum ab quasi sint perspiciatis aliquam alias sunt quos debitis ea, similique delectus, molestiae cupiditate voluptatum laborum necessitatibus distinctio neque? Voluptatem voluptatibus quisquam soluta exercitationem eius quod laudantium quasi minus, illum temporibus veniam rerum maxime labore magnam ducimus nihil?</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
     </div>
     <div class="">
-      <div id="services" class="services">
+      <div  class="services scrollspy" id="services">
         <div class="heading center-align">
              <h1>Our Services</h1>
           </div>
@@ -280,7 +291,7 @@
       </div>
     </div>
 
-    <div id="about" class="about">
+    <div  class="about scrollspy" id="about">
       <div class="row">
         <div class="col s12 m8 l6 about-content-wrapper">
           <div class="heading">
@@ -312,7 +323,7 @@
           <h3 class="white-text center-align">Call Us 24/7 - 020 8088 3632</h3>     
         </div>
     </div>
-    <div class="pricing" id="price">
+    <div class="pricing scrollspy" id="price">
       <div class="row">
         <div class="col s12 m12 l6 xl7 price-content-wrapper">
           <div class="heading center-align">
@@ -352,7 +363,7 @@
     </div>
 
     
-    <div class="contact" id="contact">
+    <div class="contact scrollspy" id="contact">
       <div class="row">
         <div class="col s12 m12 l6">
           <div class="contact-content-wrapper">
@@ -407,7 +418,7 @@
       </div>
     </div>
 
-    <div class="container" id="areas">
+    <div class="container scrollspy" id="areas">
             <div class=" area-cover">
                 <div class="heading">
                     <h1 class="center-align">Area's Covered</h1>
