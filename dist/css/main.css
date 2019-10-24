@@ -448,6 +448,7 @@
 
 .contact .form-wrapper button {
   background: #F15A2C;
+  z-index: 0;
 }
 
 .contact .form-wrapper button:hover {
@@ -455,7 +456,7 @@
 }
 
 .footer {
-  background: #F15A2C;
+  background: #00AEEF;
   padding: 1vh;
   color: #fff;
   -webkit-box-sizing: border-box;
@@ -491,6 +492,97 @@
   margin-left: 10px;
 }
 
+.footer .row .content .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .row .content .links a {
+  margin-left: 10px;
+}
+
+.sticky-mobile {
+  background: #F15A2C;
+  color: #f2f2f2;
+  width: 100vw;
+  max-height: 53px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.sticky-mobile .row {
+  margin-bottom: 0;
+}
+
+.sticky-mobile .row p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.sticky-mobile .row p a {
+  color: #f2f2f2;
+}
+
+.page-header {
+  height: 30vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 242, 242, 0.6)), to(rgba(0, 115, 188, 0.5))), url("../img/hero3.jpg") no-repeat top;
+  background: linear-gradient(rgba(242, 242, 242, 0.6), rgba(0, 115, 188, 0.5)), url("../img/hero3.jpg") no-repeat top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10vw;
+  color: #000;
+}
+
+.page-header h3 {
+  font-weight: 700;
+}
+
+.privacy {
+  margin-top: 30px;
+}
+
+.privacy ul {
+  list-style: initial;
+  margin-left: 20px;
+}
+
+.privacy ul li {
+  list-style-type: square;
+}
+
+.privacy strong {
+  font-weight: 600;
+}
+
 @media screen and (max-width: 767px) {
   .main-wrapper {
     max-width: 100vw;
@@ -518,7 +610,7 @@
   .main-header .nav-links {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     opacity: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -530,11 +622,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vw;
-    height: 100vh;
-    font-size: 2rem;
+    width: 40vw;
+    height: 92vh;
+    font-size: 1.2rem;
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 115, 188, 0.9);
     -webkit-transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
     transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
     transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
@@ -684,6 +776,12 @@
   }
   .footer .row .content .copy {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    margin-bottom: 53px;
   }
 }
 

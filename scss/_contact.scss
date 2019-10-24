@@ -48,6 +48,7 @@
 
     button {
       background: $highlighter;
+      z-index: 0;
 
       &:hover{
         background: $primary-color;

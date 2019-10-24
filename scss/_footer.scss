@@ -1,5 +1,5 @@
 .footer {
-  background: $highlighter;
+  background: $primary-dark;
   padding: 1vh;
   color: #fff;
   box-sizing: border-box;
@@ -20,6 +20,14 @@
         letter-spacing: 1px;
 
         span {
+          margin-left: 10px;
+        }
+      }
+      .links {
+        display: flex;
+        align-items: center;
+
+        a {
           margin-left: 10px;
         }
       }
