@@ -220,32 +220,49 @@
 
       <!-- Modal Structure -->
       <div id="modal1" class="modal">
-        <div class="modal-content">
+        <div class="modal-content container">
+
+          
+          <!--
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="slides" class="slides">
+                <span class="slide">Slide 1</span>
+                <span class="slide">Slide 2</span>
+                <span class="slide">Slide 3</span>
+                <span class="slide">Slide 4</span>
+                <span class="slide">Slide 5</span>
+              </div>
+            </div>
+            <a id="prev" class="control prev"></a>
+            <a id="next" class="control next"></a>
+          </div>
+        -->
           <div class="first-wrapper">
             <form action="#">
               <div class="first">
-                <h4 class="center-align">What type of work do you need?</h4>
+                <h5 class="center-align">What type of work do you need?</h5>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleRadioClick()" class="with-gap" name="group1" type="radio"  />
                     <span>Install new fixture(s)/appliance(s)</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleRadioClick()" class="with-gap" name="group1" type="radio"  />
                     <span>Replace existing fixture(s)/appliance(s)</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleRadioClick()" class="with-gap" name="group1" type="radio"  />
                     <span>Repair existing fixture(s)/appliance(s)</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleRadioClick()" class="with-gap" name="group1" type="radio"  />
                     <span>Carry out safety check</span>
                   </label>
                 </p>  
@@ -253,10 +270,10 @@
               
             </form>
           </div>
-          <div class="second-wrapper">
-            <form action="#">
+          <div class="second-wrapper hide">
+            <form action="#" onsubmit="handleSubmitSecond()">
               <div class="second">
-                <h4 class="center-align">Which fixture(s)/appliance(s) need installing?</h4>
+                <h5 class="center-align">Which fixture(s)/appliance(s) need installing?</h5>
                 <p>
                   <label>
                     <input type="checkbox" />
@@ -311,11 +328,12 @@
                     <span>Water heater</span>
                   </label>
                 </p>
+                <button class="btn">Continue</button>
               </div>
               
             </form>
           </div>
-          <div class="type-wrapper">
+          <div class="type-wrapper hide">
             <form action="#">
               <div class="type">
                 <h4 class="center-align">What is the type of property?</h4>
@@ -347,7 +365,7 @@
               </div>  
             </form>  
           </div>
-          <div class="third-wrapper">
+          <div class="third-wrapper hide">
             <form action="#">
               <div class="third">
                 <h4 class="center-align">What do you want this service completed?</h4>
@@ -384,7 +402,7 @@
               </div>  
             </form>  
           </div>
-          <div class="fourth-wrapper">
+          <div class="fourth-wrapper hide">
             <form action="#">
               <div class="fourth">
                 <h4 class="center-align">Who will purchase the materials?</h4>
