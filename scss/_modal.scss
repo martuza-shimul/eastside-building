@@ -29,20 +29,61 @@
 
 .hide {
   display: none;
+  // transition: display;
+  // transition-duration: 2s;
+  // transition-delay: 1s;
 }
 .show {
   display: block;
 }
 
+.modal{
+  background-color: aliceblue;
+
+  .modal-footer{
+    background-color: $primary-color;
+
+    button{
+      background-color: aliceblue;
+      border-radius: 5px 0;
+
+      i{
+        color: $highlighter;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
 .modal-content {
+
+  transition: hide 2s;
+
+  h5{
+    font-weight: 700;
+  }
   p {
     line-height: 2rem;
   }
-  .second-wrapper{
+  .second-wrapper, .last-wrapper{
     button{
       border-radius: 7px 0;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+    .submit{
+      input{
+        background: $highlighter;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 1.1rem;
+        border: none;
+        color: $text-rev;
+        text-transform: uppercase;
+      }
     }
   }
+  
 }
 //   $slider-width: 400px;
 //   $slider-height: 300px;

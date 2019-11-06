@@ -432,20 +432,6 @@
   padding: 5vh;
 }
 
-.contact .form-wrapper input[type="text"]:not(.browser-default):focus:not([readonly]),
-.contact .form-wrapper input[type="email"]:not(.browser-default):focus:not([readonly]),
-.contact .form-wrapper textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #0073bc;
-  -webkit-box-shadow: 0 1px 0 0 #0073bc;
-          box-shadow: 0 1px 0 0 #0073bc;
-}
-
-.contact .form-wrapper input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
-.contact .form-wrapper input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
-.contact .form-wrapper textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #0073bc;
-}
-
 .contact .form-wrapper button {
   background: #F15A2C;
   z-index: 0;
@@ -453,6 +439,20 @@
 
 .contact .form-wrapper button:hover {
   background: #0073bc;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #0073bc;
+  -webkit-box-shadow: 0 1px 0 0 #0073bc;
+          box-shadow: 0 1px 0 0 #0073bc;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #0073bc;
 }
 
 .footer {
@@ -1012,12 +1012,51 @@
   display: block;
 }
 
+.modal {
+  background-color: aliceblue;
+}
+
+.modal .modal-footer {
+  background-color: #0073bc;
+}
+
+.modal .modal-footer button {
+  background-color: aliceblue;
+  border-radius: 5px 0;
+}
+
+.modal .modal-footer button i {
+  color: #F15A2C;
+  font-size: 2rem;
+}
+
+.modal-content {
+  -webkit-transition: hide 2s;
+  transition: hide 2s;
+}
+
+.modal-content h5 {
+  font-weight: 700;
+}
+
 .modal-content p {
   line-height: 2rem;
 }
 
-.modal-content .second-wrapper button {
+.modal-content .second-wrapper button, .modal-content .last-wrapper button {
   border-radius: 7px 0;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.modal-content .second-wrapper .submit input, .modal-content .last-wrapper .submit input {
+  background: #F15A2C;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  color: #f2f2f2;
+  text-transform: uppercase;
 }
 
 *,

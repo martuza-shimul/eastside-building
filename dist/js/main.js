@@ -38,17 +38,42 @@ $(document).ready(function() {
 
 const qepath = document.querySelector(".first-wrapper");
 const qepathSecond = document.querySelector(".second-wrapper");
+const qepathType = document.querySelector(".type-wrapper");
+const qepathThird = document.querySelector(".third-wrapper");
+const qepathFourth = document.querySelector(".fourth-wrapper");
+const qepathLast = document.querySelector(".last-wrapper");
 let lists = document.querySelectorAll(".first-wrapper .first input");
 
 const handleRadioClick = () => {
   qepath.classList.add("hide");
   qepathSecond.classList.remove("hide");
-  
 };
 
-const handleSubmitSecond = (e) => {
-  e.preventDefault()
-}
+const handleSecond = () => {
+  // e.preventDefault();
+  qepathSecond.classList.add("hide");
+  qepathType.classList.remove("hide");
+};
+const handleType = () => {
+  
+  qepathType.classList.add("hide");
+  qepathThird.classList.remove("hide");
+};
+const handleThird = () => {
+  
+  qepathThird.classList.add("hide");
+  qepathFourth.classList.remove("hide");
+};
+const handleFourth = () => {
+  
+  qepathFourth.classList.add("hide");
+  qepathLast.classList.remove("hide");
+};
+// const handleSubmitSecond = (e) => {
+//   e.preventDefault()
+//   // qepathSecond.classList.add("hide");
+//   // qepathType.classList.remove("hide");
+// }
 // Quote engin click card
 // const qepath = document.querySelector(".first-wrapper");
 // let lists = document.querySelectorAll(".first-wrapper .first input");

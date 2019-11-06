@@ -32,7 +32,32 @@
     // .input-field input:active>label{
     //   color: $primary-color;
     // }
-    input[type="text"]:not(.browser-default):focus:not([readonly]),
+    // input[type="text"]:not(.browser-default):focus:not([readonly]),
+    // input[type="email"]:not(.browser-default):focus:not([readonly]),
+    // textarea.materialize-textarea:focus:not([readonly]) {
+    //   border-bottom: 1px solid $primary-color;
+    //   // -webkit-box-shadow: 0 1px 0 0 #26a69a;
+    //   box-shadow: 0 1px 0 0 $primary-color;
+    // }
+
+    // input[type="text"]:not(.browser-default):focus:not([readonly])+label,
+    // input[type="email"]:not(.browser-default):focus:not([readonly])+label,
+    // textarea.materialize-textarea:focus:not([readonly])+label{
+    //   color: $primary-color;
+    // }
+
+    button {
+      background: $highlighter;
+      z-index: 0;
+
+      &:hover{
+        background: $primary-color;
+      }
+    }
+  }
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]),
     input[type="email"]:not(.browser-default):focus:not([readonly]),
     textarea.materialize-textarea:focus:not([readonly]) {
       border-bottom: 1px solid $primary-color;
@@ -45,14 +70,3 @@
     textarea.materialize-textarea:focus:not([readonly])+label{
       color: $primary-color;
     }
-
-    button {
-      background: $highlighter;
-      z-index: 0;
-
-      &:hover{
-        background: $primary-color;
-      }
-    }
-  }
-}

@@ -271,7 +271,7 @@
             </form>
           </div>
           <div class="second-wrapper hide">
-            <form action="#" onsubmit="handleSubmitSecond()">
+            <form >
               <div class="second">
                 <h5 class="center-align">Which fixture(s)/appliance(s) need installing?</h5>
                 <p>
@@ -328,7 +328,8 @@
                     <span>Water heater</span>
                   </label>
                 </p>
-                <button class="btn">Continue</button>
+                 <button onclick="handleSecond()"  type="button" class="btn">Continue</button> 
+                 
               </div>
               
             </form>
@@ -336,28 +337,28 @@
           <div class="type-wrapper hide">
             <form action="#">
               <div class="type">
-                <h4 class="center-align">What is the type of property?</h4>
+                <h5 class="center-align">What is the type of property?</h5>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleType()" class="with-gap" name="group1" type="radio"  />
                     <span>Flat or Apartment</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleType()" class="with-gap" name="group1" type="radio"  />
                     <span>House</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleType()" class="with-gap" name="group1" type="radio"  />
                     <span>Commercial Property</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleType()" class="with-gap" name="group1" type="radio"  />
                     <span>Bungalow</span>
                   </label>
                 </p>
@@ -368,34 +369,34 @@
           <div class="third-wrapper hide">
             <form action="#">
               <div class="third">
-                <h4 class="center-align">What do you want this service completed?</h4>
+                <h5 class="center-align">What do you want this service completed?</h5>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleThird()" class="with-gap" name="group1" type="radio"  />
                     <span>As soon as possible</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleThird()" class="with-gap" name="group1" type="radio"  />
                     <span>Within the next few days</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleThird()" class="with-gap" name="group1" type="radio"  />
                     <span>Within the next week</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleThird()" class="with-gap" name="group1" type="radio"  />
                     <span>Within the next month</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleThird()" class="with-gap" name="group1" type="radio"  />
                     <span>I don't have a specific date in mind</span>
                   </label>
                 </p>  
@@ -405,28 +406,28 @@
           <div class="fourth-wrapper hide">
             <form action="#">
               <div class="fourth">
-                <h4 class="center-align">Who will purchase the materials?</h4>
+                <h5 class="center-align">Who will purchase the materials?</h5>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleFourth()" class="with-gap" name="group1" type="radio"  />
                     <span>I will provide the materials</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleFourth()" class="with-gap" name="group1" type="radio"  />
                     <span>I would like the pro to provide materials</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleFourth()" class="with-gap" name="group1" type="radio"  />
                     <span>I would like to discuss with the professional</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input class="with-gap" name="group1" type="radio"  />
+                    <input onclick="handleFourth()" class="with-gap" name="group1" type="radio"  />
                     <span>No materials needed</span>
                   </label>
                 </p>
@@ -434,10 +435,39 @@
               </div>  
             </form>  
           </div>
+          <div class="last-wrapper hide">
+            <div class="row">
+              <form class="col s12" action="">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate"/>
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate"/>
+                    <label for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate"/>
+                    <label for="email">Email</label>
+                  </div>  
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="postcode" type="text" class="validate"/>
+                    <label for="postcode">Postcode</label>
+                  </div>  
+                </div>
+                <button class="btn">Submit <i class=" material-icons right">send</i></button>
+              </form>  
+            </div>  
+          </div>
           
         </div>
         <div class="modal-footer">
-          <a href="#" class=" modal-close waves-effect waves-green btn-flat blue white-text">Cancel</a>
+          <button class=" modal-close waves-effect waves-green btn z-depth-3 "> <i class=" material-icons">close</i></button>
         </div>
       </div>
     </div>
