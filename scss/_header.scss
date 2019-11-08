@@ -56,7 +56,7 @@
         letter-spacing: 2px;
 
         &:hover {
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba($text-rev, 0.5);
         }
       }
     }
