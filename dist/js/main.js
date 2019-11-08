@@ -36,13 +36,13 @@ $(document).ready(function() {
   });
 });
 
-const qepath = document.querySelector(".first-wrapper");
-const qepathSecond = document.querySelector(".second-wrapper");
-const qepathType = document.querySelector(".type-wrapper");
-const qepathThird = document.querySelector(".third-wrapper");
-const qepathFourth = document.querySelector(".fourth-wrapper");
-const qepathLast = document.querySelector(".last-wrapper");
-let lists = document.querySelectorAll(".first-wrapper .first input");
+const qepath = document.querySelector(".quote-engine-wrapper .first");
+const qepathSecond = document.querySelector(".quote-engine-wrapper .second");
+const qepathType = document.querySelector(".quote-engine-wrapper .type");
+const qepathThird = document.querySelector(".quote-engine-wrapper .third");
+const qepathFourth = document.querySelector(".quote-engine-wrapper .fourth");
+const qepathLast = document.querySelector(".quote-engine-wrapper .last");
+// let lists = document.querySelectorAll(".first-wrapper .first input");
 
 const handleRadioClick = () => {
   qepath.classList.add("hide");
@@ -55,17 +55,14 @@ const handleSecond = () => {
   qepathType.classList.remove("hide");
 };
 const handleType = () => {
-  
   qepathType.classList.add("hide");
   qepathThird.classList.remove("hide");
 };
 const handleThird = () => {
-  
   qepathThird.classList.add("hide");
   qepathFourth.classList.remove("hide");
 };
 const handleFourth = () => {
-  
   qepathFourth.classList.add("hide");
   qepathLast.classList.remove("hide");
 };

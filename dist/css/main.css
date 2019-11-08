@@ -1030,11 +1030,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   font-size: 2rem;
 }
 
-.modal-content {
-  -webkit-transition: hide 2s;
-  transition: hide 2s;
-}
-
 .modal-content h5 {
   font-weight: 700;
 }
@@ -1043,13 +1038,13 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   line-height: 2rem;
 }
 
-.modal-content .second-wrapper button, .modal-content .last-wrapper button {
+.modal-content .quote-engine-wrapper button {
   border-radius: 7px 0;
   margin-top: 10px;
   font-weight: 400;
 }
 
-.modal-content .second-wrapper .submit input, .modal-content .last-wrapper .submit input {
+.modal-content .quote-engine-wrapper .submit input {
   background: #F15A2C;
   margin-top: 10px;
   padding: 10px;

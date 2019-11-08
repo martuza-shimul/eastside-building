@@ -238,40 +238,217 @@
             <a id="next" class="control next"></a>
           </div>
         -->
-          <div class="first-wrapper">
-            <form action="#">
+          <div class="quote-engine-wrapper">
+            <form action="data.php" method="POST">
               <div class="first">
                 <h5 class="center-align">What type of work do you need?</h5>
                 <p>
                   <label>
-                    <input onclick="handleRadioClick()" class="with-gap" name="group1" type="radio"  />
+                    <input  class="with-gap" name="first" value="Install new fixture(s)/appliance(s)" type="radio"  />
                     <span>Install new fixture(s)/appliance(s)</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input onclick="handleRadioClick()" class="with-gap" name="group1" type="radio"  />
+                    <input  class="with-gap" name="first" value="Replace existing fixture(s)/appliance(s)" type="radio"  />
                     <span>Replace existing fixture(s)/appliance(s)</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input onclick="handleRadioClick()" class="with-gap" name="group1" type="radio"  />
+                    <input  class="with-gap" name="first" type="radio" value="Repair existing fixture(s)/appliance(s)"  />
                     <span>Repair existing fixture(s)/appliance(s)</span>
                   </label>
                 </p>
                 <p>
                   <label>
-                    <input onclick="handleRadioClick()" class="with-gap" name="group1" type="radio"  />
+                    <input  class="with-gap" name="first" type="radio" value="Carry out safety check" />
                     <span>Carry out safety check</span>
                   </label>
-                </p>  
+                </p> 
+                <button onclick="handleRadioClick()"  type="button" class="btn">Continue</button>
               </div>
-              
+              <div class="second hide">
+                <h5 class="center-align">Which fixture(s)/appliance(s) need installing?</h5>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Bath</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Boiler</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Dishwasher</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Radiator</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Shower</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Sink & taps</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Toilet</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Washing machine</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Water heater</span>
+                  </label>
+                </p>
+                 <button onclick="handleSecond()"  type="button" class="btn">Continue</button> 
+                 
+              </div>
+              <div class="type hide">
+                <h5 class="center-align">What is the type of property?</h5>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="type" type="radio" value="Flat or Apartment" />
+                    <span>Flat or Apartment</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="type" type="radio" value="House" />
+                    <span>House</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="type" type="radio" value="Commercial Property"  />
+                    <span>Commercial Property</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="type" type="radio" value="Bungalow"  />
+                    <span>Bungalow</span>
+                  </label>
+                </p>
+                <button onclick="handleType()"  type="button" class="btn">Continue</button>
+                 
+              </div>
+              <div class="third hide">
+                <h5 class="center-align">What do you want this service completed?</h5>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="third" type="radio" value="As soon as possible" />
+                    <span>As soon as possible</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="third" type="radio" value="Within the next few days"  />
+                    <span>Within the next few days</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="third" type="radio" value="Within the next week"  />
+                    <span>Within the next week</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="third" type="radio" value="Within the next month"  />
+                    <span>Within the next month</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="third" type="radio" value="I don't have a specific date in mind"  />
+                    <span>I don't have a specific date in mind</span>
+                  </label>
+                </p>  
+                <button onclick="handleThird()"  type="button" class="btn">Continue</button>
+              </div>
+              <div class="fourth hide">
+                <h5 class="center-align">Who will purchase the materials?</h5>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="fourth" type="radio" value="I will provide the materials" />
+                    <span>I will provide the materials</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="fourth" type="radio" value="I would like the pro to provide materials"  />
+                    <span>I would like the pro to provide materials</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="fourth" type="radio" value="I would like to discuss with the professional" />
+                    <span>I would like to discuss with the professional</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input  class="with-gap" name="fourth" type="radio" value="No materials needed" />
+                    <span>No materials needed</span>
+                  </label>
+                </p>
+                <button onclick="handleFourth()"  type="button" class="btn">Continue</button>
+              </div>
+              <div class="last hide">
+                <div class="row">
+                  <h5 class="center-align">Fill up the form to complete this request</h5>
+                  <div class="input-field col s6">
+                    <input name="first-name" id="first_name" type="text" class="validate"/>
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input name="last-name" id="last_name" type="text" class="validate"/>
+                    <label for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input name="email" id="email" type="email" class="validate"/>
+                    <label for="email">Email</label>
+                  </div>  
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input name="postcode" id="postcode" type="text" class="validate"/>
+                    <label for="postcode">Postcode</label>
+                  </div>  
+                </div>
+                <button class="btn">Submit <i class=" material-icons right">send</i></button>
+              </div>   
             </form>
           </div>
+          <!--
           <div class="second-wrapper hide">
-            <form >
+            <form action="data.php" method="POST">
               <div class="second">
                 <h5 class="center-align">Which fixture(s)/appliance(s) need installing?</h5>
                 <p>
@@ -464,6 +641,7 @@
               </form>  
             </div>  
           </div>
+        -->
           
         </div>
         <div class="modal-footer">

@@ -57,7 +57,7 @@
 
 .modal-content {
 
-  transition: hide 2s;
+  // transition: hide 2s;
 
   h5{
     font-weight: 700;
@@ -65,7 +65,7 @@
   p {
     line-height: 2rem;
   }
-  .second-wrapper, .last-wrapper{
+  .quote-engine-wrapper{
     button{
       border-radius: 7px 0;
       margin-top: 10px;
